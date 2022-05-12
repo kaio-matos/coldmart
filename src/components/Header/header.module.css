@@ -1,7 +1,31 @@
-.header {}
+.header {
+    width: 100vw;
+    background-color: var(--white);
+}
 
-.header__logo {}
+.header__container {
+    display: grid;
+    grid-template-columns: 13% 2fr 1fr 1fr;
+    align-items: center;
 
-.header__menu {}
+    margin: auto;
+    padding: 1em 1.75em;
+    max-width: var(--max-width);
+}
 
-.header__buttons {}
+.header__container__menu {
+    display: flex;
+    justify-self: flex-start;
+}
+
+.header__container__menu__ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.header__container__buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+}
