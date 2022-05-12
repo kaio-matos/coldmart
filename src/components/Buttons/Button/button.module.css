@@ -1,0 +1,33 @@
+.button {
+    font-size: 1rem;
+    padding: 1em;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--hotmart-primary);
+    width: fit-content;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.default {
+    background-color: var(--hotmart-primary);
+    color: var(--white);
+}
+
+.light {
+    color: var(--hotmart-primary);
+    background-color: var(--white);
+    border: 1px solid var(--hotmart-primary);
+}
+
+.button:hover {
+    transition: 500ms;
+}
+
+.button.default:hover {
+    background-color: var(--hotmart-primary-darker);
+}
+
+.button.light:hover  {
+    background-color: var(--hotmart-primary-lightest);
+}

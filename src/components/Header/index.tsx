@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "../Buttons/Button";
 import styles from "./header.module.css";
 
 function Header() {
@@ -33,10 +34,10 @@ function Header() {
             </div>
             <div className={styles.header__buttons}>
                 <Link href="/login">
-                    <a>Entrar</a>
+                    <Button type="light">Entrar</Button>
                 </Link>
                 <Link href="/register">
-                    <a>Cadastre-se</a>
+                    <Button>Cadastre-se</Button>
                 </Link>
             </div>
         </header>
