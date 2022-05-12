@@ -1,0 +1,120 @@
+:root {
+    --hotmart-primary-lightest: #fdece7;
+    --hotmart-primary-lighter: #ff9377;
+    --hotmart-primary-light: #fe734f;
+    --hotmart-primary: #f04e23;
+    --hotmart-primary-dark: #c5310a;
+    --hotmart-primary-darker: #9c2100;
+    --hotmart-secondary-lightest: #e7f8fd;
+    --hotmart-secondary-lighter: #60b1c5;
+    --hotmart-secondary-light: #155364;
+    --hotmart-secondary: #053d4e;
+    --hotmart-secondary-dark: #012a36;
+    --hotmart-secondary-darker: #00181e;
+    --hotmart-tertiary-lightest: #ecf8f8;
+    --hotmart-tertiary-lighter: #b3f0f0;
+    --hotmart-tertiary-light: #7cdbdb;
+    --hotmart-tertiary: #51c1c3;
+    --hotmart-tertiary-dark: #30a8a8;
+    --hotmart-tertiary-darker: #159393;
+    --purple-lightest: #f6f2ff;
+    --purple-lighter: #d3c6fd;
+    --purple-light: #ac93fc;
+    --purple: #7c5ee2;
+    --purple-dark: #5a38c6;
+    --purple-darker: #4729a8;
+    --masters-purple: #8261a4;
+    --masters-blue: #4f64b3;
+    --masters-green: #2ecc71;
+    --masters-orange: #fb6941;
+    --white: #fff;
+    --gray-100: #fafbfc;
+    --gray-200: #f0f3f7;
+    --gray-300: #dfe2e6;
+    --gray-400: #d0d3d6;
+    --gray-500: #6b7480;
+    --gray-600: #5f6772;
+    --gray-700: #545b64;
+    --gray-800: #484e56;
+    --gray-900: #353a40;
+    --black: #000;
+    --gray-500-50: rgba(107, 116, 128, 0.5);
+    --gray-900-90: rgba(53, 58, 68, 0.9);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --black-80: rgba(0, 0, 0, 0.8);
+    --pink-500: #e6007e;
+    --success-lightest: #d7fee8;
+    --success-lighter: #28e277;
+    --success-light: #0fc75e;
+    --success: #03a046;
+    --success-dark: #03873b;
+    --success-darker: #026e30;
+    --danger-lightest: #f8dedd;
+    --danger-lighter: #df8f8b;
+    --danger-light: #d46863;
+    --danger: #d6342c;
+    --danger-dark: #c92918;
+    --danger-darker: #a01607;
+    --warning-lightest: #fdf4d9;
+    --warning-lighter: #f6d66f;
+    --warning-light: #f3c83f;
+    --warning: #efba0f;
+    --warning-dark: #d8a80e;
+    --warning-darker: #785d08;
+    --info-lightest: #d9ebfc;
+    --info-lighter: #6ca7e0;
+    --info-light: #368ee2;
+    --info: #1174d3;
+    --info-dark: #0f68bd;
+    --info-darker: #0d5ba5;
+
+    --font-family: "Nunito Sans";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+a {
+    color: var(--gray-700);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--gray-700);
+}
+
+.link {
+    position: relative;
+    color: var(--gray-700);
+    transition: 500ms;
+}
+
+.link::after {
+    content: "";
+    background-color: var(--gray-700);
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    top: 100%;
+    left: 0;
+    transition: 500ms;
+}
+
+.link:hover {
+    color: var(--hotmart-primary)
+}
+
+.link:hover::after {
+    background-color: var(--hotmart-primary);
+    width: 100%;
+}
