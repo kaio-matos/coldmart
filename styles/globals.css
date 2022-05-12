@@ -69,6 +69,7 @@
     --info-darker: #0d5ba5;
 
     --font-family: "Nunito Sans";
+    --max-width: 120rem; /* 1920px */
 }
 
 * {
@@ -76,6 +77,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+}
+
+html {
+    font-size: 14px;
 }
 
 a {
