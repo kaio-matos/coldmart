@@ -27,7 +27,7 @@
 .light-dark {
     color: var(--gray-700);
     background-color: var(--white);
-    border: 1px solid var(--gray-700);
+    border: 1px solid var(--gray-400);
 }
 
 .button:hover {
