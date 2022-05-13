@@ -15,6 +15,7 @@
 .default {
     background-color: var(--hotmart-primary);
     color: var(--white);
+    border: 1px solid var(--hotmart-primary);
 }
 
 .light-primary {
@@ -45,6 +46,12 @@
     color: var(--hotmart-primary);
     background-color: var(--hotmart-primary-lightest);
     border: 1px solid var(--hotmart-primary);
+}
+
+.button.default:active, 
+.button.light-dark:active {
+    box-shadow: 0 0 0 3px var(--hotmart-primary-lighter);
+    border: 1px solid var(--hotmart-primary-lighter);
 }
 
 .rounded {
