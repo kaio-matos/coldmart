@@ -83,6 +83,11 @@ html {
     font-size: 14px;
 }
 
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
 a {
     color: var(--gray-700);
     text-decoration: none;
