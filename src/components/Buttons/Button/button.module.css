@@ -17,10 +17,16 @@
     color: var(--white);
 }
 
-.light {
+.light-primary {
     color: var(--hotmart-primary);
     background-color: var(--white);
     border: 1px solid var(--hotmart-primary);
+}
+
+.light-dark {
+    color: var(--gray-700);
+    background-color: var(--white);
+    border: 1px solid var(--gray-700);
 }
 
 .button:hover {
@@ -31,6 +37,16 @@
     background-color: var(--hotmart-primary-darker);
 }
 
-.button.light:hover  {
+.button.light-primary:hover {
     background-color: var(--hotmart-primary-lightest);
+}
+
+.button.light-dark:hover {
+    color: var(--hotmart-primary);
+    background-color: var(--hotmart-primary-lightest);
+    border: 1px solid var(--hotmart-primary);
+}
+
+.rounded {
+    border-radius: 0.4em;
 }
